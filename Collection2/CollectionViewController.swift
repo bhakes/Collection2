@@ -38,20 +38,26 @@ class CollectionViewController: UICollectionViewController {
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return ColorHelper.shared.sectionCount
     }
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 0
+        return ColorHelper.shared.rowCountFor(section: section)
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
-    
-        // Configure the cell
-    
+        
+        guard let reuseIdentifier = CollectionViewCell.reuseIdentifier else {fatalError("unable to dequeue reusable cell")}
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? CollectionViewCell else {fatalError("unable to dequeue reusable cell")}
+        
+        // Configure the cell...
+        
+        cell.nameLabel.text = ColorHelper.shared.colorNameFor(indexPath: indexPath)
+        
+        cell.swatchView.backgroundColor = ColorHelper.shared.colorFor(indexPath: indexPath)
+        
         return cell
     }
 
