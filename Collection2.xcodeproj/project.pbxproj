@@ -12,6 +12,12 @@
 		D1F9934421AF088E00DA4B07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1F9934221AF088E00DA4B07 /* Main.storyboard */; };
 		D1F9934621AF088F00DA4B07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1F9934521AF088F00DA4B07 /* Assets.xcassets */; };
 		D1F9934921AF088F00DA4B07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1F9934721AF088F00DA4B07 /* LaunchScreen.storyboard */; };
+		D1F9935121AF094100DA4B07 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F9935021AF094100DA4B07 /* TableViewController.swift */; };
+		D1F9935321AF094E00DA4B07 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F9935221AF094E00DA4B07 /* TableViewCell.swift */; };
+		D1F9935521AF096000DA4B07 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F9935421AF096000DA4B07 /* CollectionViewController.swift */; };
+		D1F9935721AF096C00DA4B07 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F9935621AF096C00DA4B07 /* CollectionViewCell.swift */; };
+		D1F9935921AF097600DA4B07 /* CollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F9935821AF097600DA4B07 /* CollectionReusableView.swift */; };
+		D1F9935B21AF098B00DA4B07 /* CrayonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F9935A21AF098B00DA4B07 /* CrayonModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		D1F9934521AF088F00DA4B07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1F9934821AF088F00DA4B07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D1F9934A21AF088F00DA4B07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1F9935021AF094100DA4B07 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		D1F9935221AF094E00DA4B07 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		D1F9935421AF096000DA4B07 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		D1F9935621AF096C00DA4B07 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		D1F9935821AF097600DA4B07 /* CollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionReusableView.swift; sourceTree = "<group>"; };
+		D1F9935A21AF098B00DA4B07 /* CrayonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrayonModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +69,12 @@
 				D1F9933E21AF088E00DA4B07 /* AppDelegate.swift */,
 				D1F9934021AF088E00DA4B07 /* ViewController.swift */,
 				D1F9934221AF088E00DA4B07 /* Main.storyboard */,
+				D1F9935021AF094100DA4B07 /* TableViewController.swift */,
+				D1F9935221AF094E00DA4B07 /* TableViewCell.swift */,
+				D1F9935421AF096000DA4B07 /* CollectionViewController.swift */,
+				D1F9935621AF096C00DA4B07 /* CollectionViewCell.swift */,
+				D1F9935821AF097600DA4B07 /* CollectionReusableView.swift */,
+				D1F9935A21AF098B00DA4B07 /* CrayonModel.swift */,
 				D1F9934521AF088F00DA4B07 /* Assets.xcassets */,
 				D1F9934721AF088F00DA4B07 /* LaunchScreen.storyboard */,
 				D1F9934A21AF088F00DA4B07 /* Info.plist */,
@@ -135,8 +153,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1F9935921AF097600DA4B07 /* CollectionReusableView.swift in Sources */,
+				D1F9935B21AF098B00DA4B07 /* CrayonModel.swift in Sources */,
 				D1F9934121AF088E00DA4B07 /* ViewController.swift in Sources */,
+				D1F9935321AF094E00DA4B07 /* TableViewCell.swift in Sources */,
+				D1F9935721AF096C00DA4B07 /* CollectionViewCell.swift in Sources */,
+				D1F9935121AF094100DA4B07 /* TableViewController.swift in Sources */,
 				D1F9933F21AF088E00DA4B07 /* AppDelegate.swift in Sources */,
+				D1F9935521AF096000DA4B07 /* CollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
