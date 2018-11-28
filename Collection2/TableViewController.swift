@@ -48,14 +48,19 @@ class TableViewController: UITableViewController {
     }
     
 
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let label = UILabel()
+        label.textAlignment = .center
+        label.backgroundColor = .black
+        label.textColor = .white
+        label.text = ColorHelper.shared.sectionNameFor(indexPath: IndexPath(row: 0, section: section))
+        
+        return label
     }
-    */
 
+    override func sectionIndexTitles(for tableView: UITableView) -> [String]? {
+        return ColorHelper.shared.sectionTitles()
+    }
     /*
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {

@@ -10,4 +10,14 @@ import UIKit
 
 class CollectionViewCell: UICollectionViewCell {
     
+    static let reuseIdentifier: String? = "cell"
+    @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var swatchView: UIView!
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
+    }
+    
+
+    
 }
