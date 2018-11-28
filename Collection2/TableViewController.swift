@@ -23,24 +23,30 @@ class TableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        
+        return ColorHelper.shared.sectionCount
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        
+        return ColorHelper.shared.rowCountFor(section: section)
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        
+        guard let reuseIdentifier = TableViewCell.reuseIdentifier else {fatalError("unable to dequeue reusable cell")}
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as? TableViewCell else {fatalError("unable to dequeue reusable cell")}
 
         // Configure the cell...
-
+        
+        cell.nameLabel.text = ColorHelper.shared.colorNameFor(indexPath: indexPath)
+        
+        cell.swatchView.backgroundColor = ColorHelper.shared.colorFor(indexPath: indexPath)
+        
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
